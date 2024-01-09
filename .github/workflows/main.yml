@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run unit tests
-        run: python test.py
+        run: python RubenJorge_DO_bot/test.py
 
       - name: Run dynamic tests
-        run: python test-main.py
+        run: python RubenJorge_DO_bot/test-main.py
