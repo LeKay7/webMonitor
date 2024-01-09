@@ -18,9 +18,6 @@ jobs:
         run: pip install requests
         
       - name: Instalar dependencias 3
-        run: pip install sys
-        
-      - name: Instalar dependencias 4
         run: pip install pytest
         
       - name: Run unit tests
