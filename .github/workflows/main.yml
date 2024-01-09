@@ -11,7 +11,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
+      - name: Instalat dependencias
+        run: pip install telebot %% pip install requests %% pip install sys %% pip install pytest
+        
       - name: Run unit tests
         run: python RubenJorge_DO_bot/test.py
 
