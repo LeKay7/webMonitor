@@ -24,4 +24,7 @@ jobs:
         run: python RubenJorge_DO_bot/test.py
 
       - name: Run dynamic tests
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN_1 }} 
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID_1 }}
         run: python RubenJorge_DO_bot/test-main.py
