@@ -1,10 +1,11 @@
 import telebot
+import os
 import bot3
 
 # Configuración de Telegram
-bot = telebot.TeleBot("6960071430:AAGltCpYSW5xxJA6htqe2ty8efNu0XZB8Nk")
+bot = telebot.TeleBot(os.environ.get("TELEGRAM_TOKEN"))
 
 # Envío de mensaje a Telegram
-chatid="6647409382"
+chatid=os.environ.get("CHAT_ID")
 mensaje="Se ha hecho un push"
 bot.send_message(chatid, mensaje)
