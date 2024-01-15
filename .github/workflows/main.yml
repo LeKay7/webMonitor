@@ -19,6 +19,9 @@ jobs:
         
       - name: Instalar dependencias 3
         run: pip install pytest
+
+      - name: Instalar dependencias 4
+        run: pip install sys
         
       - name: Run unit tests
         run: python RubenJorge_DO_bot/test.py
