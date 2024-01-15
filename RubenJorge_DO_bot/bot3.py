@@ -6,7 +6,7 @@ from botlib import check_service_web, check_port, check_code
 # VARIABLES
 token="6960071430:AAGltCpYSW5xxJA6htqe2ty8efNu0XZB8Nk"
 url="https://web.telegram.org/"
-port=443
+port="443"
 bot = telebot.TeleBot(token) 
 
 # COMPRUEBA LA PAGINA WEB
