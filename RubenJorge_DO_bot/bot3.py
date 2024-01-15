@@ -1,6 +1,5 @@
 import telebot
 import requests
-import sys
 from botlib import check_service_web, check_port, check_code
 
 
@@ -31,5 +30,4 @@ else:
 
 chatid="6647409382"
 bot.send_message(chatid, mensaje)
-sys.exit()
-bot.polling()
+bot.stop_polling()
