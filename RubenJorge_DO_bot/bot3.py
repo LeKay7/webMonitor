@@ -1,12 +1,14 @@
 import telebot
 import requests
+import os
 from botlib import check_service_web, check_port, check_code
 
 
 # VARIABLES
-token="6960071430:AAGltCpYSW5xxJA6htqe2ty8efNu0XZB8Nk"
+token=os.environ.get("TELEGRAM_TOKEN")
 url="https://web.telegram.org/"
 port="443"
+chatid=os.environ.get("CHAT_ID")
 bot = telebot.TeleBot(token) 
 
 # COMPRUEBA LA PAGINA WEB
@@ -28,6 +30,6 @@ elif codigo_200OK:
 else:
     mensaje = "El servicio web no responde"
 
-chatid="6647409382"
+
 bot.send_message(chatid, mensaje)
 bot.stop_polling()
